@@ -1,5 +1,5 @@
 <?php 
-$conn = mysqli_connect("sql305.infinityfree.com" , "if0_34678500" ,"40ChBJzxHPWECZ","if0_34678500_login");
+$conn = mysqli_connect("localhost" , "root" ,"","login");
 $fullname = $_POST["fullname"];
 $sql = "SELECT nom_prenom FROM users_info WHERE nom_prenom = '$fullname'";
 $query = mysqli_query($conn,$sql);
